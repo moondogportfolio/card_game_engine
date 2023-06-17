@@ -1,0 +1,117 @@
+
+from enum import Enum, auto
+
+
+class EntityEvents(Enum): #SPECIFIC TO 
+	#landmark
+	COUNTDOWN = auto()
+	ADVANCE = auto()
+	REVEALED = auto()
+
+	#RULE
+	PAY_COST = auto()
+	UNEQUIP = auto()
+	IMPROVISE = auto()
+	KILL = auto()
+	FORGE = auto()
+	#PLAYER
+	GAIN_ATTACK_TOKEN = auto()
+	GAIN_MANA_GEM = auto()
+	REFILL_SPELL_MANA = auto()
+	REFILL_MANA = auto()
+	PLAYER_ATTACK_COMMIT = auto()
+	#------game generated
+	PLAY_FAST_OR_SLOW_OR_SKILL = auto()
+	PLAY = auto()
+	PLAY_UNIT = auto()
+	PLAY_SPELL = auto()
+	PLAY_SKILL = auto()
+	ACTIVATE_PLUNDER = auto()
+	PLAY_LANDMARK = auto()
+	#activate trap
+	ACTIVATE_CHIME = auto()
+	# ACTIVATE_RALLY = auto()
+	ACTIVATE_NIGHTFALL = auto()
+	ACTIVATE_DAYBREAK = auto()
+	ACTIVATE_ENLIGHTENED = auto()
+	ACTIVATE_COUNTDOWN = auto()
+	ACTIVATE_TRAP = auto()
+	ACTIVATE_SPELL = auto()
+	ACTIVATE_6_PLUS_COST_SPELL = auto()
+	ACTIVATE_REPUTATION = auto()
+	
+	USE_MANA_FOR_PLAY = auto()
+	#-----target
+	PREDICTION_SEEN = auto()
+	CARD_OPTION_SELECT = auto()
+	TARGET_CANDIDATE = auto()
+	TARGETED = auto()
+	TARGETED_BY_SPELL = auto()
+	SELECT_DEFENDER = auto()
+	SELECT_TO_DEFEND = auto()
+	SELECT_CHALLENGER = auto()
+	SELECT_TO_CHALLENGE = auto()
+	SELECT_CARD_TO_PLAY = auto()
+	#-------card reactions
+	LEVEL_UP = auto()
+	SUNDISC_RESTORED = auto()
+	LURK = auto()
+	FURY = auto()
+	DIE = auto()
+	DAMAGE_SURVIVE = auto()
+	DAMAGE_OPPO_NEXUS = auto()
+	#-----card effects movement
+	MOVED_OUT_OF_PLAY = auto()
+	SUMMON = auto()
+	SUMMON_LANDMARK = auto()
+	SWAP = auto()
+	NAB = auto()
+	DISCARD = auto()
+	MANIFEST = auto()
+	INVOKE = auto()
+	REFORGE = auto()
+	DRAW = auto()
+	RECALL = auto()
+	TOSS = auto()
+	MOVE = auto()
+	CAPTURE = auto()
+	PREDICT = auto()
+	REVIVE = auto()
+	#-----card effects battle
+	ATTACK_COMMIT = auto()
+	BLOCK = auto()
+	NEXUS_STRIKE = auto()
+	SUPPORT = auto()
+	SUPPORT_CHECK = auto()
+	STRIKE = auto()
+	MUTUAL_STRIKE = auto()
+	BATTLE_STRIKE = auto()
+	CHALLENGE = auto()
+	#-----card effects destruction
+
+	BLADE_DANCE = auto()
+	OBLITERATE = auto()
+	DESTROY_LANDMARK = auto()
+	NEGATE_SPELL = auto()
+	#-----card effects creation
+	CREATE_CARD = auto()
+	ADD_TRAP = auto()
+	SPAWN = auto()
+	#-----card effects manipulation
+	TRANSFORM = auto()
+	DRAIN = auto()
+	HEAL = auto()
+	FROSTBITE = auto()
+	DAMAGE = auto()
+	STUN = auto()
+	SILENCE = auto()
+	#-----attribute
+	IS_EQUIPPED_WITH = auto()
+	ATTACH = auto()
+	REMOVE_KEYWORD = auto()
+	ADD_KEYWORD = auto()
+	SET_ATTRIBUTE = auto()
+	#---beacons
+	DEEP = auto()
+	SLAY = auto()
+	LASTBREATH = auto()

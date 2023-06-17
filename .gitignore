@@ -1,0 +1,6 @@
+.vscode
+.pytest_cache
+.VSCodeCounter
+__old
+__pycache__
+__init__.py

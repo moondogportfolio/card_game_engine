@@ -1,0 +1,27 @@
+
+from enum import Enum, auto
+
+
+class SubTypes_(Enum):
+	MOONCARD = auto()
+	NIGHTFALL = auto()
+	DAYBREAK = auto()
+	EQUIPMENT = auto()
+	CRIMSON = auto()
+	TURRET = auto()
+	MECHA_YORDLE = 'MECHA-YORDLE'
+	FAE = 'FAE'
+	TREASURE = 'TREASURE'
+	DRAGON = 'DRAGON'
+	PORO = 'PORO'
+	CELESTIAL = 'CELESTIAL'
+	ELITE = 'ELITE'
+	YETI = 'YETI'
+	YORDLE = 'YORDLE'
+	SEA_MONSTER = 'SEA MONSTER'
+	SPIDER = 'SPIDER'
+	ELNUK = 'ELNUK'
+	TECH = 'TECH'
+	LURKER = 'LURKER'
+	DARKIN = 'DARKIN'
+
